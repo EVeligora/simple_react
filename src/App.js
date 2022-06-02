@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.scss';
+import logo from "./logo.svg";
+import "./App.scss";
+import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className="App-link btn btn-danger"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
