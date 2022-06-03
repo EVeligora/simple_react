@@ -12,6 +12,7 @@
 	will-change: transform;
 
 	@include z-index(header);
+	background: #e9ecef;
 }
 
 
@@ -20,10 +21,16 @@
 	height: 100%;
 }
 
-.logo {
-	height: 100%;
-	max-height: 100%;
+.header__logo {
+	display: block;
 }
+
+.logo {
+	height: 8rem;
+	width: 8rem;
+	height: 5rem;
+}
+
 .logo__img {
 	display: block;
 	height: 100%;
@@ -40,4 +47,8 @@
 
 .menu {
 	@extend %global_flex_block_row_wrap_flex-start;
+}
+
+.menu__item + .menu__item{
+	margin-left: 2rem;
 }

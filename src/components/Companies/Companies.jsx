@@ -1,8 +1,8 @@
 const Companies = () => {
   return (
-    <div>
-      <div className="container">Companies</div>;
-    </div>
+
+    <div className="container">Companies</div>
+
   );
 };
 
