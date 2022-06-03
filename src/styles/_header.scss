@@ -1,0 +1,43 @@
+//------------------------------------------------------------layout
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: var(--height-header);
+	width: 100%;
+
+	font-size: 1rem;
+
+	will-change: transform;
+
+	@include z-index(header);
+}
+
+
+.header__in {
+	@extend %global_flex_block_row_wrap_flex-start_center;
+	height: 100%;
+}
+
+.logo {
+	height: 100%;
+	max-height: 100%;
+}
+.logo__img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+//------------------------------------------------------------layout###
+
+.header__menu_w {
+	margin-left: auto;
+	height: 100%;
+	@extend %global_flex_block_row_wrap_flex-start_center;
+}
+
+.menu {
+	@extend %global_flex_block_row_wrap_flex-start;
+}
