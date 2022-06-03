@@ -1,7 +1,9 @@
 const Companies = () => {
   return (
 
-    <div className="container">Companies</div>
+    <div className="container">
+      Companies
+    </div>
 
   );
 };

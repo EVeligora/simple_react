@@ -1,7 +1,6 @@
-import "../node_modules/bootstrap/scss/bootstrap.scss";
+import Header from "./components/Header/Header"
+import Companies from "./components/Companies/Companies";
 import "./styles/main_global.scss";
-import Header from "./components/Header/Header.jsx";
-import Companies from "./components/Companies/Companies.jsx";
 
 const App = () => {
   return (
