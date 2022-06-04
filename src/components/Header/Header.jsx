@@ -28,10 +28,10 @@ const Header = () => {
 
 
     <header className="text-bg-light border-bottom fixed-top" style={{ height: '100px' }}>
-      <div className="container-xl style={{ height: '100%' }}">
-        <div className="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"  style={{ height: '100%' }} >
-          <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <img src={logo} className="" alt="logo"  height={60} />
+      <div className="container-xxl h-100">
+        <div className="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 h-100" >
+          <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" style={{ height: '60px' }}>
+            <img src={logo} className="h-100" alt="logo" />
           </a>
 
           <div className="col-md-3 text-end">

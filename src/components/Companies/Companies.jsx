@@ -1,7 +1,7 @@
 const Companies = () => {
   return (
 
-    <div className="container">
+    <>
       <h1 class="display-5 fw-bold text-center mb-4">Companies</h1>
       <div className="list-group w-auto">
         <a href="#" className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -34,7 +34,7 @@ const Companies = () => {
           </div>
         </a>
       </div>
-    </div>
+    </>
 
   );
 };

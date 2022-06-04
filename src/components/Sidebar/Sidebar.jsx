@@ -2,7 +2,7 @@ import logo from "../../images/logo.png";
 
 const Header = () => {
   return (
-    <div className="flex-shrink-0 p-3 text-bg-light" style={{ width: '280px' }}>
+    <div className="flex-shrink-0 p-3 border-end w-100 h-100">
 
           <div className="collapse show" id="home-collapse">
             <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">

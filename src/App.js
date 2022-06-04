@@ -8,11 +8,15 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="d-flex flex-nowrap" style={{ paddingTop: '100px' }}>
-        <Sidebar />
-        <div className="comtainer">
-          <Login />
-          <Companies />
+      <main className="container-xxl h-100" style={{ paddingTop: "100px" }}>
+        <div class="row h-100">
+          <div class="col-2">
+            <Sidebar />
+          </div>
+          <div class="col-10">
+            {/* <Login /> */}
+            <Companies />
+          </div>
         </div>
       </main>
     </>
