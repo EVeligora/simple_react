@@ -10,10 +10,10 @@ const App = () => {
       <Header />
       <main className="container-xxl h-100" style={{ paddingTop: "100px" }}>
         <div class="row h-100">
-          <div class="col-2">
+          <div class="col-2 h-100">
             <Sidebar />
           </div>
-          <div class="col-10">
+          <div class="col-10 h-100">
             {/* <Login /> */}
             <Companies />
           </div>
