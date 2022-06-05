@@ -4,6 +4,7 @@ import Login from "./components/Login/Login";
 import Companies from "./components/Companies/Companies";
 import "./styles/main_global.scss";
 
+
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
           <div class="col-10 h-100">
             {/* <Login /> */}
             <Companies />
+
           </div>
         </div>
       </main>
