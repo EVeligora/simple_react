@@ -29,13 +29,13 @@ const Header = () => {
 
     <header className="text-bg-light border-bottom fixed-top" style={{ height: '100px' }}>
       <div className="container-xxl h-100">
-        <div className="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 h-100" >
-          <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" style={{ height: '60px' }}>
+        <div className="d-flex flex-wrap align-items-center py-3 h-100" >
+          <a href="/" className="d-flex align-items-center" style={{ height: '60px' }}>
             <img src={logo} className="h-100" alt="logo" />
           </a>
 
-          <div className="col-md-3 text-end">
-            <a href="/login" className="btn btn-outline-primary me-2">Login</a>
+          <div className="ms-auto">
+            <a href="/login" className="btn btn-outline-primary">Login</a>
             {/* <button type="button" className="btn btn-primary">Sign-up</button> */}
           </div>
 
