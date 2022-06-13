@@ -23,9 +23,13 @@ const CompaniesList = (props) => {
               <h6 className="mb-0">Microsoft</h6>
             </div>
             <div className="d-flex ms-auto">
-              <button type="button" class="btn btn-outline-secondary" onClick={onEditClick}>Edit</button>
+              <button type="button" className="btn btn-outline-secondary" onClick={onEditClick}>
+                Edit
+              </button>
 
-              <button type="button" class="btn btn-outline-danger ms-3" data-bs-toggle="modal" data-bs-target="#deleteCompany">Delete</button>
+              <button type="button" className="btn btn-outline-danger ms-3" data-bs-toggle="modal" data-bs-target="#deleteCompany">
+                Delete
+              </button>
 
             </div>
           </div>
@@ -33,7 +37,7 @@ const CompaniesList = (props) => {
       </div>
       <div className="row">
         <div className="col w-100">
-          <button type="button" class="btn btn-secondary btn-lg w-100" onClick={onAddClick}>Add company</button>
+          <button type="button" className="btn btn-secondary btn-lg w-100" onClick={onAddClick}>Add company</button>
         </div>
       </div>
       {props.showChildren && props.children}

@@ -13,9 +13,9 @@ const CompaniesModalsAddCompany = (props) => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="addCompanyLabel">
-                {props.id > 0 ? 'edit' : 'add'}
+                {props.id > 0 ? 'Edit Company' : 'Add Company'}
               </h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={close} />
+              <button type="button" className="btn-close" onClick={close} />
             </div>
             <div className="modal-body">
               <form className="">
@@ -26,7 +26,7 @@ const CompaniesModalsAddCompany = (props) => {
               </form>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={close}>Close</button>
+              <button type="button" className="btn btn-secondary" onClick={close}>Close</button>
               <button type="button" className="btn btn-primary">Save changes</button>
             </div>
           </div>

@@ -1,27 +1,38 @@
-import Header from "./components/Header/Header";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Login from "./components/Login/Login";
-import Companies from "./components/Companies/Companies";
+import React from "react";
+import Login from "./components/Login/LoginPage";
+import CompaniesPage from "./pages/Companies/CompaniesPage";
 import "./styles/main_global.scss";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import AuthLayout from "./layouts/AuthLayout";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 const App = () => {
+  // const Router = ReactRouterDOM.BrowserRouter;
+  // const Route = ReactRouterDOM.Route;
+  // const Routes = ReactRouterDOM.Routes;
   return (
-    <>
-      <Header />
-      <main className="container-xxl h-100" style={{ paddingTop: "100px" }}>
-        <div class="row h-100">
-          <div class="col-2 h-100">
-            <Sidebar />
-          </div>
-          <div class="col-10 h-100">
-            {/* <Login /> */}
-            <Companies />
-
-          </div>
-        </div>
-      </main>
-    </>
+    <Router>
+      <Routes>
+        {/* <Route path={"/"} element={<AuthLayout />}>
+          <Route index element={<Login />} />
+        </Route> */}
+        <Route path={"/"} element={<AuthLayout />}>
+          <Route index element={<Login />} />
+        </Route>
+        <Route path={"/"} element={<MainLayout />}>
+          <Route
+            path={"/companies"}
+            element={
+              <PrivateRoute>
+                <CompaniesPage />
+              </PrivateRoute>
+            }
+          />
+          <Route path={"/test"} element={"Test"} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };
 

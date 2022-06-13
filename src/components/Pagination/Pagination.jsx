@@ -1,21 +1,32 @@
 const Pagination = () => {
   return (
-
-    <>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-          </li>
-          <li class="page-item active"><span class="page-link" href="#">1</span></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav aria-label="Page navigation example">
+      <ul className="pagination justify-content-center">
+        <li className="page-item disabled">
+          <a className="page-link">Previous</a>
+        </li>
+        <li className="page-item active">
+          <span className="page-link" href="#">
+            1
+          </span>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            2
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            3
+          </a>
+        </li>
+        <li className="page-item">
+          <a className="page-link" href="#">
+            Next
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

@@ -1,15 +1,23 @@
+import { Link } from "react-router-dom";
 
 const SidebarNav = () => {
   return (
     <>
       <nav className="collapse show" id="home-collapse">
-        <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li>
-            <a href="/companies" className="link-dark d-inline-flex text-decoration-none rounded fs-5">
+        <ul className="nav flex-column">
+          <li className="nav-item">
+            <Link to="/companies" className="link-dark d-inline-flex text-decoration-none rounded fs-5 nav-link">
               Companies
-            </a>
+            </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/test" className="link-dark d-inline-flex text-decoration-none rounded fs-5 nav-link">
+              Test
+            </Link>
+          </li>
+
         </ul>
+
       </nav>
     </>
   );
